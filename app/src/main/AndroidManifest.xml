@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.infinitygym">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_nowords_dark"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_nowords_dark"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".account" android:parentActivityName=".menu"></activity>
+        <activity android:name=".products" android:parentActivityName=".menu"/>
+        <activity android:name=".nutritionHighlights" android:parentActivityName=".menu" />
+        <activity android:name=".todaysSession" android:parentActivityName=".menu" />
+        <activity android:name=".WelcomeToGym" />
+        <activity android:name=".signIntoTheGym" android:parentActivityName=".menu" />
+        <activity android:name=".menu" />
+        <activity android:name=".confirmation" />
+        <activity android:name=".register" />
+        <activity android:name=".login" />
+        <activity android:name=".index" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
