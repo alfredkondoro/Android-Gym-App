@@ -4,8 +4,9 @@
     <string name="welcome_subtitle">TO THE BEST GYM IN DAR</string>
     <string name="register">REGISTER</string>
     <string name="login">LOGIN</string>
+    <string name="register_login">Already a member? Login Here</string>
     <string name="name">Name</string>
-    <string name="username">Username</string>
+    <string name="email">Email</string>
     <string name="phonenumber">Phone Number</string>
     <string name="password">Password</string>
     <string name="cpassword">Confirm Password</string>

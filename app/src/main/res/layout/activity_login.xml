@@ -9,21 +9,21 @@
 
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/loginButtonLogin"
         android:layout_width="210dp"
         android:layout_height="47dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/round_button"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#ffffff"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/loginPasswordText" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/loginButtonRegister"
         android:layout_width="203dp"
         android:layout_height="46dp"
         android:layout_marginTop="23dp"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/loginPasswordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -51,18 +51,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/loginEmailText" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/loginEmailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:ems="10"
         android:padding="10dp"
-        android:inputType="textPersonName"
         android:background="@drawable/round_text_dark"
-        android:hint="@string/name"
+        android:hint="@string/email"
         android:textColor="@color/colorPrimary"
         android:textColorHint="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,5 +102,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/loginButtonLogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>

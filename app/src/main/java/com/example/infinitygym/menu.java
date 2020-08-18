@@ -7,12 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class menu extends AppCompatActivity {
     Button button;
     Button button2;
     Button button3;
     Button button4;
     Button button5;
+    FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +58,14 @@ public class menu extends AppCompatActivity {
             }
         });
 
+
         button5 = (Button) findViewById(R.id.button17);
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(menu.this, account.class);
-                startActivity(intent);
+                FirebaseAuth.getInstance ().signOut ();
+                Intent backLogin = new Intent(menu.this, login.class);
+                startActivity (backLogin);
             }
         });
     }

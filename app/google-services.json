@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "285424166365",
+    "firebase_url": "https://gym-androidapp.firebaseio.com",
+    "project_id": "gym-androidapp",
+    "storage_bucket": "gym-androidapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285424166365:android:40a69b1141612f9a9f8234",
+        "android_client_info": {
+          "package_name": "com.example.infinitygym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285424166365-leru72ovkts1ij6ruqq888u31qvh0dam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1AcCfNsP36IStR0EzuIqdialldNIKi8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285424166365-leru72ovkts1ij6ruqq888u31qvh0dam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
