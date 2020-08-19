@@ -39,13 +39,13 @@ public class login extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser mFirebaseUser= mFirebaseAuth.getCurrentUser ();
-                if(mFirebaseUser !=null){
-                    Toast.makeText (login.this, "You are logged in", Toast.LENGTH_SHORT);
+                if(mFirebaseUser != null){
+                    Toast.makeText (login.this, "You are logged in", Toast.LENGTH_SHORT).show();
                     Intent loggedIn = new Intent(login.this, menu.class);
                     startActivity (loggedIn);
                 }
                 else{
-                    Toast.makeText (login.this, "Sign In Unsuccessful", Toast.LENGTH_SHORT);
+                    Toast.makeText (login.this, "Sign In Unsuccessful", Toast.LENGTH_SHORT).show ();
                 }
             }
         };
@@ -61,9 +61,11 @@ public class login extends AppCompatActivity {
                 } else if (pwd.isEmpty ()) {
                     password.setError ("Please enter the password");
                     password.requestFocus ();
-                } else if (email.isEmpty () && pwd.isEmpty ()) {
-                    Toast.makeText (login.this, "Fields are empty", Toast.LENGTH_SHORT);
-                } else if (!(email.isEmpty () && pwd.isEmpty ())) {
+                }
+                else if (email.isEmpty () && pwd.isEmpty ()) {
+                    Toast.makeText (login.this, "Fields are empty", Toast.LENGTH_SHORT).show ();
+                }
+                else if (!(email.isEmpty () && pwd.isEmpty ())) {
                     mFirebaseAuth.signInWithEmailAndPassword (email, pwd).addOnCompleteListener (login.this, new OnCompleteListener<AuthResult> () {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {

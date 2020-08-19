@@ -43,24 +43,28 @@ public class register extends AppCompatActivity {
                 } else if (pwd.isEmpty ()) {
                     password.setError ("Please enter the password");
                     password.requestFocus ();
-                } else if (email.isEmpty () && pwd.isEmpty ()) {
-                    Toast.makeText (register.this, "Fields are empty", Toast.LENGTH_SHORT);
-                } else if (!(email.isEmpty () && pwd.isEmpty ())) {
-                    mFirebaseAuth.createUserWithEmailAndPassword (email, pwd).addOnCompleteListener (register.this, new OnCompleteListener<AuthResult> () {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (!task.isSuccessful ()) {
-                                Toast.makeText (register.this, "Sign up Unsuccessful", Toast.LENGTH_SHORT).show();
-                            } else {
-                                startActivity (new Intent (register.this, login.class));
+
+                } else  if(email.isEmpty() && pwd.isEmpty()){
+                        Toast.makeText(register.this,"Fields Are Empty!",Toast.LENGTH_SHORT).show();
+                    }
+                    else  if(!(email.isEmpty() && pwd.isEmpty())){
+                        mFirebaseAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener(register.this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if(!task.isSuccessful()){
+                                    Toast.makeText(register.this,"SignUp Unsuccessful, Please Try Again",Toast.LENGTH_SHORT).show();
+                                }
+                                else {
+                                    startActivity(new Intent(register.this, menu.class));
+                                }
                             }
-                        }
-                    });
-                } else {
-                    Toast.makeText (register.this, "Error Occured", Toast.LENGTH_SHORT).show ();
+                        });
+                    } else{
+                        Toast.makeText(register.this,"Error Occurred!",Toast.LENGTH_SHORT).show();
+
+                    }
                 }
-            }
-        });
+            });
 
         txtSignIn.setOnClickListener (new View.OnClickListener () {
             @Override
