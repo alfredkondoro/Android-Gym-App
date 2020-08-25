@@ -5,77 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".menu"
-    android:background="@drawable/gym1c">
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="300dp"
-        android:layout_height="53dp"
-        android:background="@color/colorPrimary"
-        android:text="Sign in into the Gym"
-        android:textSize="18dp"
-        android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/button14"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="300dp"
-        android:layout_height="53dp"
-        android:background="@color/colorPrimary"
-        android:text="Today's Session"
-        android:textSize="18dp"
-        android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/button15"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
-
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="300dp"
-        android:layout_height="53dp"
-        android:background="@color/colorPrimary"
-        android:text="Nutrition"
-        android:textSize="18dp"
-        android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/button16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
-
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="300dp"
-        android:layout_height="53dp"
-        android:background="@color/colorPrimary"
-        android:text="Store"
-        android:textSize="18dp"
-        android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/button17"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
+    android:background="@drawable/gym1_login">
 
     <Button
         android:id="@+id/button17"
         android:layout_width="300dp"
         android:layout_height="53dp"
-        android:background="@color/colorPrimary"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/round_button"
         android:text="LOGOUT"
-        android:textSize="18dp"
         android:textColor="@color/colorAccent"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button16" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -86,6 +30,46 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_words" />
+        app:srcCompat="@drawable/logo_words_dark" />
+
+    <ImageButton
+        android:id="@+id/imgsign"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/signgym"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <ImageButton
+        android:id="@+id/imgsession"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/session"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <ImageButton
+        android:id="@+id/imgstore"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/store"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <ImageButton
+        android:id="@+id/imgnutrition"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/nutrition"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="273dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

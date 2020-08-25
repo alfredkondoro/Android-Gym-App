@@ -16,7 +16,7 @@ public class products extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products);
-        button = (Button) findViewById(R.id.button20);
+        button = (Button) findViewById(R.id.button16);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
