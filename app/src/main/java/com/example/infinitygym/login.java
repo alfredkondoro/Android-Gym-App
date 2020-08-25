@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class login extends AppCompatActivity {
     Button buttonSignIn, buttonSignUp;
     EditText emailId, password;
-    FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
     @Override
@@ -45,7 +45,7 @@ public class login extends AppCompatActivity {
                     startActivity (loggedIn);
                 }
                 else{
-                    Toast.makeText (login.this, "Sign In Unsuccessful", Toast.LENGTH_SHORT).show ();
+                    Toast.makeText (login.this, "You are not logged in", Toast.LENGTH_SHORT).show ();
                 }
             }
         };
@@ -69,8 +69,8 @@ public class login extends AppCompatActivity {
                     mFirebaseAuth.signInWithEmailAndPassword (email, pwd).addOnCompleteListener (login.this, new OnCompleteListener<AuthResult> () {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (!task.isSuccessful ()) {
-                                Toast.makeText (login.this, "Login Error, try again!", Toast.LENGTH_SHORT).show();
+                            if (!task.isSuccessful()) {
+                                Toast.makeText (login.this, "Login Error"+ task.getException (), Toast.LENGTH_SHORT).show();
                             } else {
                                 startActivity (new Intent (login.this, menu.class));
                             }

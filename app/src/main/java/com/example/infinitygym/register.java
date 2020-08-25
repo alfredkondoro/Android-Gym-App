@@ -20,7 +20,7 @@ public class register extends AppCompatActivity {
     Button buttonSignUp;
     EditText emailId, password;
     TextView txtSignIn;
-    FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth mFirebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

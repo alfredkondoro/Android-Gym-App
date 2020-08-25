@@ -43,9 +43,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="249dp"
-        android:layout_marginEnd="248dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="254dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
         android:text="AGREE AND CONTINUE"
         android:textColor="#ffffff" />
