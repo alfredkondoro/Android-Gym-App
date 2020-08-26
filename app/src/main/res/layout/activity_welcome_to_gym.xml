@@ -12,7 +12,7 @@
         android:layout_width="189dp"
         android:layout_height="45dp"
         android:layout_marginStart="108dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/round_button"
         android:text="LOGOUT"
         android:textColor="@color/colorAccent"
         android:textSize="19dp"

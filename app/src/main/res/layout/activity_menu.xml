@@ -8,7 +8,7 @@
     android:background="@drawable/gym1_login">
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/btnlogout"
         android:layout_width="300dp"
         android:layout_height="53dp"
         android:layout_marginBottom="28dp"
@@ -18,14 +18,16 @@
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,40 +38,109 @@
         android:id="@+id/imgsign"
         android:layout_width="119dp"
         android:layout_height="119dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
         android:background="@null"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/signgym"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="273dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        app:srcCompat="@drawable/signgym" />
 
     <ImageButton
         android:id="@+id/imgsession"
         android:layout_width="119dp"
         android:layout_height="119dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="27dp"
         android:background="@null"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/session"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="441dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/session" />
 
     <ImageButton
         android:id="@+id/imgstore"
         android:layout_width="119dp"
         android:layout_height="119dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="52dp"
         android:background="@null"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/store"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="441dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31"
+        app:srcCompat="@drawable/store" />
 
     <ImageButton
         android:id="@+id/imgnutrition"
         android:layout_width="119dp"
         android:layout_height="119dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="56dp"
         android:background="@null"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/nutrition"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="273dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        app:srcCompat="@drawable/nutrition" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/SignintoGym"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgsign" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/overgrow_demo"
+        android:text="@string/menu"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/nutrition"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgnutrition" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/store"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgstore" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/Session"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgsession" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

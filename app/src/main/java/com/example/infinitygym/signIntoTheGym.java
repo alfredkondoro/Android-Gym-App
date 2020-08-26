@@ -14,7 +14,7 @@ public class signIntoTheGym extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_into_the_gym);
-        button = (Button) findViewById(R.id.button10);
+        button = (Button) findViewById(R.id.button9);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

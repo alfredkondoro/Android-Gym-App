@@ -10,4 +10,10 @@
     <string name="phonenumber">Phone Number</string>
     <string name="password">Password</string>
     <string name="cpassword">Confirm Password</string>
+    <string name="SignintoGym">SIGN INTO THE GYM</string>
+    <string name="Session">TODAY\'S SESSION</string>
+    <string name="nutrition">NUTRITION HIGHLIGHTS</string>
+    <string name="store">GYM STORE</string>
+    <string name="menu">MENU</string>
+    <string name="logout">LOGOUT</string>
 </resources>
